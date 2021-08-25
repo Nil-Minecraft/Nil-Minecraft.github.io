@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nil - MC启动器 | 高级 | 免费 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+<meta name="baidu-site-verification" content="AnhZQBj6ja" />
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/websocket.js"></script>
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<style>
+	.ac-bg {
+		display: none;
+		top: 0;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.3);
+		filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#69000000, endColorstr=#69000000);
+		z-index: 101;
+	}
+
+	.fudai_area {
+		display: inline-block;
+		width: 8vw;
+		height: 8vw;
+		background: url(activity/fudai.png) no-repeat center;
+		background-size: contain;
+	}
+
+	.ac-box {
+		width: 8vw;
+		padding-top: 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.join_btn {
+		width: 17vw;
+		height: 3.6vw;
+		text-align: center;
+		line-height: 3.6vw;
+		background: rgba(166, 44, 24, 1);
+		border-radius: 30px;
+		font-size: 1.3vw;
+		color: #FFEFC9;
+		margin: 0 auto;
+		cursor: pointer;
+		display: block;
+	}
+
+	a {
+		color: #666666;
+		text-decoration: none;
+	}
+
+	.pay_split_line {
+		width: 680px;
+		height: 2px;
+		margin: 1.52vw auto 1.18vw;
+		background: linear-gradient(90deg, rgba(228, 0, 0, 0) 0%, rgba(197, 0, 0, 1) 50%, rgba(197, 0, 0, 0) 100%);
+	}
+
+	.ac {
+		width: 680px;
+		height: 420px;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		display: none;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	.ac p {
+		color: rgba(166, 44, 24, 1);
+		text-align: center;
+		padding: 10px;
+	}
+
+	.ac a {
+		color: rgb(250, 132, 114);
+		text-decoration: underline;
+	}
+
+
+	.pay_area {
+		width: 680px;
+		height: 420px;
+		background: #FFEFC9;
+		position: relative;
+	}
+
+	.pay_area::after {
+		content: '';
+		position: absolute;
+		left: 2px;
+		right: 2px;
+		top: 2px;
+		bottom: 2px;
+		border: 2px solid #9F391D;
+		pointer-events: none;
+	}
+
+	.reg-content-left .reg-tips {
+		margin-top: 56px;
+		margin-left: 50px;
+	}
+
+	.block_top_area {
+		position: absolute;
+		width: 25vw;
+		height: 6vw;
+		text-align: center;
+		line-height: 6vw;
+		top: -2.7vw;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 1.8vw;
+		font-weight: 800;
+		color: rgba(166, 44, 24, 1);
+		background: url(activity/bianzu18.png) no-repeat center;
+		background-size: contain;
+		z-index: 1;
+	}
+</style>
+
+<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div id="colorlib-logo"><a href="index.html">Nil</a></div>
+						</div>
+						<div class="col-md-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="index.html">首页</a></li>
+								<li><a href="services.html">服务条款</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section id="home" class="video-hero"
+			style="height: 700px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;"
+			data-section="home">
+			<div class="overlay"></div>
+			<a class="player" data-property=""></a>
+			<div class="display-t text-center">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-12 col-md-offset-0">
+							<div class="animate-box">
+								<h2>Nil</h2>
+								<p>新一代我的世界启动器</p>
+								<p><a href="netplus.exe"
+										class="btn btn-primary btn-lg btn-custom">下载 Windows 版本</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+ 		<div align="center">
+			<img src="images/black.png" height="500px" />
+		</div>
+
+		<div class="colorlib-services colorlib-bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-browser"></i>
+							</span>
+							<div class="desc">
+								<h3>高技术功能</h3>
+								<p>提供核心编辑等高端操作</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-download"></i>
+							</span>
+							<div class="desc">
+								<h3>碧波海港</h3>
+								<p>在这里下载Minecraft,甚至同玩家一起交流</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-layers"></i>
+							</span>
+							<div class="desc">
+								<h3>高效率</h3>
+								<p>支持核心修改,json编写,随改随测</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="colorlib-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h3>以一种新的方式，来了解Nil</h3>
+						<h4>请点击查看宣传片</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<span class="play"><a href="https://cloud.vlssu.com/s/8b4sR/video?name=NetPlus%E5%AE%A3%E4%BC%A0.mp4" class="pulse popup-vimeo"><i
+									class="icon-play3"></i></a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="colorlib-work-featured colorlib-bg-white">
+			<div class="container">
+				<div class="row mobile-wrap">
+					<div class="col-md-5 animate-box">
+						<img src="images/image.png" width=450px height=450px>
+					</div>
+					<div class="col-md-7 animate-box">
+						<div class="desc">
+							<h2>Nil MC启动器</h2>
+							<div class="features">
+								<span class="icon"><i class="icon-lightbulb"></i></span>
+								<div class="f-desc">
+									<p>全国多节点覆盖多条映射不同地区针对玩家地区差异性得到了优势互补的作用，能够让玩家在游戏中体验到流畅低延时的体验</p>
+								</div>
+							</div>
+							<div class="features">
+								<span class="icon"><i class="icon-circle-compass"></i></span>
+								<div class="f-desc">
+									<p>适合中小型服务器，如：基友服、与朋友正版联机、模组服、生存服等，支持所有服务器版本</p>
+								</div>
+							</div>
+							<div class="features">
+								<span class="icon"><i class="icon-beaker"></i></span>
+								<div class="f-desc">
+									<p>为了保证服务器的安全、游戏玩家的体验，我们也加入反MOTD压测，检测到压测时我们会将此类IP自动屏蔽并告知服主，方便服主查询这个人的信息</p>
+								</div>
+							</div>
+							<p><a href="netplus/client.exe"
+									class="btn btn-primary btn-outline with-arrow">立即下载体验 <i
+										class="icon-arrow-right3"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tlinks"> <a href="index.html"></a></div>
+		<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_img_1.jpg);"
+			data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-4 col-sm-4 text-center animate-box">
+							<div class="counter-entry">
+								<span class="icon"><i class="flaticon-ribbon"></i></span>
+								<div class="desc">
+									<span class="colorlib-counter js-counter" id="ruser"
+										data-refresh-interval="50"></span>
+									<span class="colorlib-counter-label">注册用户</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 text-center animate-box">
+							<div class="counter-entry">
+								<span class="icon"><i class="flaticon-church"></i></span>
+								<div class="desc">
+									<span class="colorlib-counter js-counter" id="ouser"
+										data-refresh-interval="50"></span>
+									<span class="colorlib-counter-label">在线用户</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 text-center animate-box">
+							<div class="counter-entry">
+								<span class="icon"><i class="flaticon-dove"></i></span>
+								<div class="desc">
+									<span class="colorlib-counter js-counter" id="oserver"
+										data-refresh-interval="50"></span>
+									<span class="colorlib-counter-label">更新次数</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="colorlib-footer">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 colorlib-widget">
+						<h4>Nil MC启动器</h4>
+						<p>我们起步不久，但是我们相信有梦想总能实现，我们会积极维护以更新软件
+							<br>如您在使用中出现任何问题都可以联系我们，我们会耐心为您解决 .</br>
+					</div>
+					<div class="col-md-3 colorlib-widget">
+						<h4>友情链接</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="index.html#"><i class="icon-check"></i>待添加</a></li>
+								<li><a href="index.html#"><i class="icon-check"></i>待添加<a></li>
+								<li><a href="index.html#"><i class="icon-check"></i>待添加<a></li>
+								<li><a href="index.html#"><i class="icon-check"></i>待添加<a></li>
+							</ul>
+						</p>
+					</div>
+
+
+
+					<div class="col-md-3 colorlib-widget">
+						<h4>联系我们</h4>
+						<ul class="colorlib-footer-links">
+							<li><a https://jq.qq.com/?_wv=1027&k=TKnu6Zv8">官方QQ群：</i>1019593660</a></li>
+							<li><a
+									href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=111111111111&fuin= &website=&Site=在线客服& Menu=yes">官方客服
+									①：</i>111111111111</a></li>
+							<li><a
+									href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=111111111111&fuin= &website=&Site=在线客服& Menu=yes">官方客服
+									②：</i>11111111111</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights reserved by <a
+									href="index.html#">Nil - MC启动器</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+		<div class="gototop js-top">
+			<a href="index.html#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+		</div>
+		<script>
+			var date = {
+				isDuringDate: function (beginDateStr, endDateStr) {
+					var curDate = new Date(),
+						beginDate = new Date(beginDateStr),
+						endDate = new Date(endDateStr);
+					if (curDate >= beginDate && curDate <= endDate) {
+						return true;
+					}
+					return false;
+				}
+			}
+			function a() {
+				if (date.isDuringDate('2020/04/30', '2020/05/06') == false) {
+					document.getElementById("ac").style.display = "none"
+				}
+			}
+			function v() {
+				document.getElementById("ac").style.display = "none"
+			}
+			a()
+		</script>
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Stellar Parallax -->
+		<script src="js/jquery.stellar.min.js"></script>
+		<!-- YTPlayer -->
+		<script src="js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/magnific-popup-options.js"></script>
+		<!-- Counters -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- Main -->
+		<script src="js/main.js"></script>
+</body>
+
+</html>
